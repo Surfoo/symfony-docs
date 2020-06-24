@@ -24,7 +24,7 @@ Next, create an ``index.php`` file that defines the kernel class and executes it
 
     // index.php
     use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
-    use Symfony\Bundle\FrameworkBundle\Routing\Loader\Configurator\RoutingConfigurator;
+    use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
     use Symfony\Component\Config\Loader\LoaderInterface;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\HttpFoundation\JsonResponse;
@@ -134,7 +134,7 @@ hold the kernel. Now it looks like this::
     namespace App;
 
     use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
-    use Symfony\Bundle\FrameworkBundle\Routing\Loader\Configurator\RoutingConfigurator;
+    use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
     use Symfony\Component\Config\Loader\LoaderInterface;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\HttpKernel\Kernel as BaseKernel;
